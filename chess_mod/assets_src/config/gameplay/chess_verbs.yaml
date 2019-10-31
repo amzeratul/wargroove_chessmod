@@ -1,0 +1,11 @@
+---
+verbs:
+  - id: chess_move
+    icon: ui/icons/unit_action_icon_attack.png
+    name: ui_unit_verbs_chess_move
+    targetColour: attack_target
+    targetOutlineColour: attack_target_outline
+    targetted: true
+    scriptName: lua_mod/chess/chess_move
+
+...

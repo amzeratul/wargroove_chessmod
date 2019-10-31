@@ -1,0 +1,125 @@
+---
+
+unitClasses:
+  - id: chess_rook
+    name: unit_name_chess_rook
+    cost: 1200
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_giant
+
+units:
+  - class: chess_rook
+    faction: cherrystone
+    name: unit_name_chess_rook
+    mapAnimation: units/giant/cherrystone/map_giant_cherrystone
+    battleAnimation: units/giant/cherrystone/battle_giant_cherrystone
+    battleAnimationRiver: fx/river_overlay/battle_giant_cherrystone_river
+    smallPortrait: units/giant/cherrystone/portrait_giant_cherrystone_small.png
+    mediumPortrait: units/giant/cherrystone/portrait_giant_cherrystone_medium.png
+    mapSpeed: 4.0
+    grabPos: [27, 13]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      preAttack: giantPoseStone
+      attack: giantAttack
+      attackMap: unitAttack
+      death: giantDie
+      deathMap: unitDie
+      run: giantEntry
+      runMap: giantEntry
+      hit: hitStone
+      hitMap: hitStone
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 0.75
+  
+  - class: chess_rook
+    faction: felheim
+    name: unit_name_chess_rook
+    mapAnimation: units/giant/felheim/map_giant_felheim
+    battleAnimation: units/giant/felheim/battle_giant_felheim
+    battleAnimationRiver: fx/river_overlay/battle_giant_felheim_river
+    smallPortrait: units/giant/felheim/portrait_giant_felheim_small.png
+    mediumPortrait: units/giant/felheim/portrait_giant_felheim_medium.png
+    mapSpeed: 4.0
+    grabPos: [27, 13]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      preAttack: giantPoseMetal
+      attack: giantAttackMetal
+      attackMap: unitAttack
+      death: giantDieMetal
+      deathMap: unitDie
+      run: giantEntryMetal
+      runMap: giantEntryMetal
+      hit: hitMetal
+      hitMap: hitMetal
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 0.75
+
+  - class: chess_rook
+    faction: heavensong
+    name: unit_name_chess_rook
+    mapAnimation: units/giant/heavensong/map_giant_heavensong
+    battleAnimation: units/giant/heavensong/battle_giant_heavensong
+    battleAnimationRiver: fx/river_overlay/battle_giant_heavensong_river
+    smallPortrait: units/giant/heavensong/portrait_giant_heavensong_small.png
+    mediumPortrait: units/giant/heavensong/portrait_giant_heavensong_medium.png
+    mapSpeed: 4.0
+    grabPos: [27, 13]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      preAttack: giantPoseMetal
+      attack: giantAttackMetal
+      attackMap: unitAttack
+      death: giantDieMetal
+      deathMap: unitDie
+      run: giantEntry
+      runMap: giantEntry
+      hit: hitMetal
+      hitMap: hitMetal
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 0.75
+
+  - class: chess_rook
+    faction: floran
+    name: unit_name_chess_rook
+    mapAnimation: units/giant/floran/map_giant_floran
+    battleAnimation: units/giant/floran/battle_giant_floran
+    battleAnimationRiver: fx/river_overlay/battle_giant_floran_river
+    smallPortrait: units/giant/floran/portrait_giant_floran_small.png
+    mediumPortrait: units/giant/floran/portrait_giant_floran_medium.png
+    mapSpeed: 4.0
+    grabPos: [27, 13]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      preAttack: giantPoseWood
+      attack: giantAttackWood
+      attackMap: unitAttack
+      death: giantDieWood
+      deathMap: unitDie
+      run: giantEntryWood
+      runMap: giantEntryWood
+      hit: hitWood
+      hitMap: hitWood
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 0.75
+
+...

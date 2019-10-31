@@ -1,0 +1,57 @@
+---
+id: ChessMod
+name: "Chess"
+description: "Implements real Chess rules in Wargroove."
+author: "Rodrigo Braz Monteiro"
+remove:
+  commanders:
+  - caesar
+  - emeric
+  - mercival
+  - sigrid
+  - ragna
+  - nuru
+  - sedge
+  - koji
+  - ryota
+  - elodie
+  - darkmercia
+  unitClass:
+  - archer
+  - ballista
+  - balloon
+  - dog
+  - dragon
+  - drone
+  - giant
+  - harpoonship
+  - harpy
+  - knight
+  - mage
+  - merman
+  - soldier
+  - spearman
+  - travelboat
+  - trebuchet
+  - villager
+  - vine
+  - turtle
+  - wagon
+  - warship
+  - witch
+  - commander_caesar
+  - commander_darkmercia
+  - commander_elodie
+  - commander_emeric
+  - commander_greenfinger
+  - commander_koji
+  - commander_mercia
+  - commander_mercival
+  - commander_nuru
+  - commander_ragna
+  - commander_ryota
+  - commander_sedge
+  - commander_sigrid
+  - commander_tenri
+  - commander_valder
+...

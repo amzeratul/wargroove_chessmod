@@ -1,0 +1,10 @@
+---
+en-GB:
+  ui_unit_verbs_chess_move: "Move"
+  unit_name_chess_pawn: "Pawn"
+  unit_name_chess_bishop: "Bishop"
+  unit_name_chess_knight: "Knight"
+  unit_name_chess_rook: "Rook"
+  unit_name_chess_queen: "Queen"
+  unit_name_chess_king: "King"
+...

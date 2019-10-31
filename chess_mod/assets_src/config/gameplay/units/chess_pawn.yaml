@@ -1,0 +1,121 @@
+---
+
+unitClasses:
+  - id: chess_pawn
+    name: unit_name_chess_pawn
+    cost: 100
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_soldier
+
+units:
+  - class: chess_pawn
+    faction: cherrystone
+    name: unit_name_chess_pawn
+    mapAnimation: units/soldier/cherrystone/map_soldier_cherrystone
+    battleAnimation: units/soldier/cherrystone/battle_soldier_cherrystone
+    battleAnimationRiver: fx/river_overlay/battle_soldier_cherrystone_river
+    smallPortrait: units/soldier/cherrystone/portrait_soldier_cherrystone_small.png
+    mediumPortrait: units/soldier/cherrystone/portrait_soldier_cherrystone_medium.png
+    mapSpeed: 4.0
+    grabPos: [13, 14]
+    sounds:
+      attack: soldierAttackRed
+      attackShout: soldierPreAttackRed
+      attackMap: unitAttack
+      captureShout: soldierPreAttackRed
+      death: soldierDieRed
+      deathMap: unitDie
+      run: infantryHeavyEntry
+      runMap: infantryHeavyMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: [0.45, 0.8]
+
+  - class: chess_pawn
+    faction: felheim
+    name: unit_name_chess_pawn
+    mapAnimation: units/soldier/felheim/map_soldier_felheim
+    battleAnimation: units/soldier/felheim/battle_soldier_felheim
+    battleAnimationRiver: fx/river_overlay/battle_soldier_felheim_river
+    smallPortrait: units/soldier/felheim/portrait_soldier_felheim_small.png
+    mediumPortrait: units/soldier/felheim/portrait_soldier_felheim_medium.png
+    mapSpeed: 4.0
+    grabPos: [18, 10]
+    sounds:
+      attack: soldierAttackBlue
+      attackShout: soldierPreAttackBlue
+      attackMap: unitAttack
+      captureShout: soldierPreAttackBlue
+      death: soldierDieBlue
+      deathMap: unitDie
+      run: infantrySkeletonEntry
+      runMap: infantrySkeletonMapEntry
+      hit: hitBone
+      hitMap: hitBone
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: [0.25, 0.75]
+
+  - class: chess_pawn
+    faction: heavensong
+    name: unit_name_chess_pawn
+    mapAnimation: units/soldier/heavensong/map_soldier_heavensong
+    battleAnimation: units/soldier/heavensong/battle_soldier_heavensong
+    battleAnimationRiver: fx/river_overlay/battle_soldier_heavensong_river
+    smallPortrait: units/soldier/heavensong/portrait_soldier_heavensong_small.png
+    mediumPortrait: units/soldier/heavensong/portrait_soldier_heavensong_medium.png
+    mapSpeed: 4.0
+    grabPos: [12, 10]
+    sounds:
+      attack: soldierAttackYellow
+      attackShout: soldierPreAttackYellow
+      attackMap: unitAttack
+      captureShout: soldierPreAttackYellow
+      death: soldierDieYellow
+      deathMap: unitDie
+      run: infantryHeavyEntry
+      runMap: infantryHeavyMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: [0.85]
+
+  - class: chess_pawn
+    faction: floran
+    name: unit_name_chess_pawn
+    mapAnimation: units/soldier/floran/map_soldier_floran
+    battleAnimation: units/soldier/floran/battle_soldier_floran
+    battleAnimationRiver: fx/river_overlay/battle_soldier_floran_river
+    smallPortrait: units/soldier/floran/portrait_soldier_floran_small.png
+    mediumPortrait: units/soldier/floran/portrait_soldier_floran_medium.png
+    mapSpeed: 4.0
+    grabPos: [18, 18]
+    sounds:
+      attack: soldierAttackGreen
+      attackShout: soldierPreAttackGreen
+      attackMap: unitAttack
+      captureShout: soldierPreAttackGreen
+      death: soldierDieGreen
+      deathMap: unitDie
+      run: infantryLightEntry
+      runMap: infantryLightMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: [0.5, 0.85]
+
+...

@@ -1,0 +1,271 @@
+---
+
+unitClasses:
+  - id: chess_bishop
+    name: unit_name_chess_bishop
+    cost: 100
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_mage
+
+units:
+  - class: chess_bishop
+    faction: cherrystone
+    name: unit_name_chess_bishop
+    mapAnimation: units/mage/cherrystone/map_mage_cherrystone
+    battleAnimation: units/mage/cherrystone/battle_mage_cherrystone
+    battleAnimationRiver: fx/river_overlay/battle_mage_cherrystone_river
+    smallPortrait: units/mage/cherrystone/portrait_mage_cherrystone_small.png
+    mediumPortrait: units/mage/cherrystone/portrait_mage_cherrystone_medium.png
+    mapSpeed: 4.0
+    grabPos: [15, 12]
+    sounds:
+      attackMap: unitAttack
+      attack: mageAttackRed
+      attackEffect: mageAttackEffect
+      attackEffect1: mageAttackEffect1
+      attackEffect2: mageAttackEffect2
+      attackEffect3: mageAttackEffect3
+      attackEffect4: mageAttackEffect4
+      captureShout: soldierPreAttackRed
+      death: soldierDieRed
+      deathMap: unitDie
+      run: infantryMediumEntry2
+      runMap: infantryMediumMapEntry2
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: fourMages
+        hitDelay: [1.0, 1.3, 1.6, 1.9]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_4
+        effectDelay: 1.0
+        attackEffectSound: attackEffect4
+        numAttackers: 4
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: threeMages
+        hitDelay: [1.0, 1.3, 1.6]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_3
+        effectDelay: 1.0
+        attackEffectSound: attackEffect3
+        numAttackers: 3
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: twoMages
+        hitDelay: [1.0, 1.3]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_2
+        effectDelay: 1.0
+        attackEffectSound: attackEffect2
+        numAttackers: 2
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: oneMage
+        hitDelay: [1.0]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_1
+        effectDelay: 1.0
+        attackEffectSound: attackEffect1
+        numAttackers: 1
+        ranged: true
+        cutscenePivot: [-50, 175]
+
+
+  - class: chess_bishop
+    faction: felheim
+    name: unit_name_chess_bishop
+    mapAnimation: units/mage/felheim/map_mage_felheim
+    battleAnimation: units/mage/felheim/battle_mage_felheim
+    battleAnimationRiver: fx/river_overlay/battle_mage_felheim_river
+    smallPortrait: units/mage/felheim/portrait_mage_felheim_small.png
+    mediumPortrait: units/mage/felheim/portrait_mage_felheim_medium.png
+    mapSpeed: 4.0
+    grabPos: [15, 12]
+    sounds:
+      attackMap: unitAttack
+      attack: mageAttackBlue
+      attackEffect: mageAttackEffect
+      attackEffect1: mageAttackEffect1
+      attackEffect2: mageAttackEffect2
+      attackEffect3: mageAttackEffect3
+      attackEffect4: mageAttackEffect4
+      captureShout: mageAttackVoiceBlue
+      death: undeadDieCrumble
+      deathMap: unitDie
+      run: infantryMediumEntry2
+      runMap: infantryMediumMapEntry2
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: fourMages
+        hitDelay: [1.0, 1.3, 1.6, 1.9]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_4
+        effectDelay: 1.0
+        attackEffectSound: attackEffect4
+        numAttackers: 4
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: threeMages
+        hitDelay: [1.0, 1.3, 1.6]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_3
+        effectDelay: 1.0
+        attackEffectSound: attackEffect3
+        numAttackers: 3
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: twoMages
+        hitDelay: [1.0, 1.3]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_2
+        effectDelay: 1.0
+        attackEffectSound: attackEffect2
+        numAttackers: 2
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: oneMage
+        hitDelay: [1.0]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_1
+        effectDelay: 1.0
+        attackEffectSound: attackEffect1
+        numAttackers: 1
+        ranged: true
+        cutscenePivot: [-50, 175]
+
+
+  - class: chess_bishop
+    faction: heavensong
+    name: unit_name_chess_bishop
+    mapAnimation: units/mage/heavensong/map_mage_heavensong
+    battleAnimation: units/mage/heavensong/battle_mage_heavensong
+    battleAnimationRiver: fx/river_overlay/battle_mage_heavensong_river
+    smallPortrait: units/mage/heavensong/portrait_mage_heavensong_small.png
+    mediumPortrait: units/mage/heavensong/portrait_mage_heavensong_medium.png
+    mapSpeed: 4.0
+    grabPos: [15, 12]
+    sounds:
+      attackMap: unitAttack
+      attack: mageAttackYellow
+      attackEffect: mageAttackEffect
+      attackEffect1: mageAttackEffect1
+      attackEffect2: mageAttackEffect2
+      attackEffect3: mageAttackEffect3
+      attackEffect4: mageAttackEffect4
+      captureShout: soldierPreAttackYellow
+      death: soldierDieYellow
+      deathMap: unitDie
+      run: infantryMediumEntry2
+      runMap: infantryMediumMapEntry2
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: fourMages
+        hitDelay: [2.5, 2.8, 3.1, 3.4]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_4
+        effectDelay: 2.5
+        attackEffectSound: attackEffect4
+        numAttackers: 4
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: threeMages
+        hitDelay: [2.5, 2.8, 3.1]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_3
+        effectDelay: 2.5
+        attackEffectSound: attackEffect3
+        numAttackers: 3
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: twoMages
+        hitDelay: [2.5, 2.8]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_2
+        effectDelay: 2.5
+        attackEffectSound: attackEffect2
+        numAttackers: 2
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: oneMage
+        hitDelay: [2.5]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_1
+        effectDelay: 2.5
+        attackEffectSound: attackEffect1
+        numAttackers: 1
+        ranged: true
+        cutscenePivot: [-50, 175]
+
+  - class: chess_bishop
+    faction: floran
+    name: unit_name_chess_bishop
+    mapAnimation: units/mage/floran/map_mage_floran
+    battleAnimation: units/mage/floran/battle_mage_floran
+    battleAnimationRiver: fx/river_overlay/battle_mage_floran_river
+    smallPortrait: units/mage/floran/portrait_mage_floran_small.png
+    mediumPortrait: units/mage/floran/portrait_mage_floran_medium.png
+    mapSpeed: 4.0
+    grabPos: [15, 12]
+    sounds:
+      attackMap: unitAttack
+      attack: mageAttackGreen
+      attackEffect: mageAttackEffect
+      attackEffect1: mageAttackEffect1
+      attackEffect2: mageAttackEffect2
+      attackEffect3: mageAttackEffect3
+      attackEffect4: mageAttackEffect4
+      captureShout: soldierPreAttackGreen
+      death: soldierDieGreen
+      deathMap: unitDie
+      run: infantryMediumEntry2
+      runMap: infantryMediumMapEntry2
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: fourMages
+        hitDelay: [0.9, 1.2, 1.5, 1.8]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_4
+        effectDelay: 0.9
+        attackEffectSound: attackEffect4
+        numAttackers: 4
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: threeMages
+        hitDelay: [0.9, 1.2, 1.5]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_3
+        effectDelay: 0.9
+        attackEffectSound: attackEffect3
+        numAttackers: 3
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: twoMages
+        hitDelay: [0.9, 1.2]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_2
+        effectDelay: 0.9
+        attackEffectSound: attackEffect2
+        numAttackers: 2
+        ranged: true
+        cutscenePivot: [-50, 175]
+      - id: oneMage
+        hitDelay: [0.9]
+        hitSpark: fx/bs_stab_attack
+        effect: fx/bs_mage_attack_1
+        effectDelay: 0.9
+        attackEffectSound: attackEffect1
+        numAttackers: 1
+        ranged: true
+        cutscenePivot: [-50, 175]
+
+...

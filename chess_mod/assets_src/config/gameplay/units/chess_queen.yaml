@@ -1,0 +1,157 @@
+---
+
+unitClasses:
+  - id: chess_queen
+    name: unit_name_chess_queen
+    cost: 100
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_commander
+
+units:
+  - class: chess_queen
+    faction: cherrystone
+    name: unit_name_chess_queen
+    mapAnimation: units/commanders/mercia/map_mercia
+    battleAnimation: units/commanders/mercia/battle_mercia
+    battleAnimationRiver: fx/river_overlay/battle_mercia_river
+    smallPortrait: units/commanders/mercia/portrait_mercia_small.png
+    mediumPortrait: units/commanders/mercia/portrait_mercia_medium.png
+    mapSpeed: 4.0
+    skinColour: typeII
+    grabPos: [47, 47]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    stayAfterDeath: true
+    sounds:
+      attackMap: unitAttack
+      attack: mercia/merciaAttack
+      attackShout: mercia/merciaAttackShout
+      captureShout: mercia/merciaCapture
+      attackCommanderShout: mercia/merciaCommanderKillShout
+      death: mercia/merciaDie
+      deathMap: mercia/merciaDieGhost
+      deathMapNoBattle: mercia/merciaDieNoBattle
+      run: infantryHeavyMapEntry
+      runMap: infantryHeavyMapEntry
+      firstHit: mercia/merciaHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: mercia/merciaGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.2
+
+  - class: chess_queen
+    faction: felheim
+    name: unit_name_chess_queen
+    mapAnimation: units/commanders/sigrid/map_sigrid
+    battleAnimation: units/commanders/sigrid/battle_sigrid
+    battleAnimationRiver: fx/river_overlay/battle_sigrid_river
+    smallPortrait: units/commanders/sigrid/portrait_sigrid_small.png
+    mediumPortrait: units/commanders/sigrid/portrait_sigrid_medium.png
+    mapSpeed: 4.0
+    skinColour: typeI
+    grabPos: [34, 55]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    attackRunTimeMin: 2.5
+    attackRunTimeMax: 3.5
+    sounds:
+      attackMap: unitAttack
+      attack: sigrid/sigridAttack
+      attackShout: sigrid/sigridPreAttack
+      counter: sigrid/sigridCounterAttack
+      captureShout: sigrid/sigridShoutCalmAmIInvited
+      attackCommander: sigrid/sigridCommanderKillAttack
+      attackCommanderShout: sigrid/sigridCommanderKillShout
+      death: sigrid/sigridDie
+      deathMap: sigrid/sigridDieGhost
+      deathMapNoBattle: sigrid/sigridDieNoBattle
+      run: infantryLightMapEntry
+      angryRun: balloonEntryMap
+      runMap: infantryLightMapEntry
+      firstHit: sigrid/sigridHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: sigrid/sigridGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: [1.1]
+        ranged: false
+
+  - class: chess_queen
+    faction: heavensong
+    name: unit_name_chess_queen
+    mapAnimation: units/commanders/tenri/map_tenri
+    battleAnimation: units/commanders/tenri/battle_tenri
+    battleAnimationRiver: fx/river_overlay/battle_tenri_river
+    smallPortrait: units/commanders/tenri/portrait_tenri_small.png
+    mediumPortrait: units/commanders/tenri/portrait_tenri_medium.png
+    mapSpeed: 4.0
+    skinColour: typeIII
+    grabPos: [30, 28]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      attackMap: unitAttack
+      preAttack: tenri/tenriPreAttack
+      attack: tenri/tenriAttack
+      attackShout: tenri/tenriAttackShout
+      captureShout: tenri/tenriShoutTheresNoTimeToWaste
+      attackCommanderShout: tenri/tenriCommanderKillShout
+      death: tenri/tenriDie
+      deathMap: tenri/tenriDieGhost
+      deathMapNoBattle: tenri/tenriDieNoBattle
+      run: infantryLightMapEntry
+      runMap: infantryLightMapEntry
+      firstHit: tenri/tenriHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: tenri/tenriGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.5
+
+  - class: chess_queen
+    faction: floran
+    name: unit_name_chess_queen
+    mapAnimation: units/commanders/nuru/map_nuru
+    battleAnimation: units/commanders/nuru/battle_nuru
+    battleAnimationRiver: fx/river_overlay/battle_nuru_river
+    smallPortrait: units/commanders/nuru/portrait_nuru_small.png
+    mediumPortrait: units/commanders/nuru/portrait_nuru_medium.png
+    mapSpeed: 4.0
+    grabPos: [31, 25]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    sounds:
+      attackMap: unitAttack
+      attack: nuru/nuruAttack
+      attackShout: nuru/nuruAttackShout
+      captureShout: nuru/nuruShoutIllTakeThis
+      attackCommanderShout: nuru/nuruCommanderKillShout
+      death: nuru/nuruDie
+      deathMap: nuru/nuruDieGhost
+      deathMapNoBattle: nuru/nuruDieNoBattle
+      run: infantryLightMapEntry
+      runMap: infantryLightMapEntry
+      firstHit: nuru/nuruHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: nuru/nuruGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 2.05
+        ranged: false
+
+...

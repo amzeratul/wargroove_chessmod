@@ -1,0 +1,133 @@
+---
+
+unitClasses:
+  - id: chess_knight
+    name: unit_name_chess_knight
+    cost: 100
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_mage
+
+units:
+  - class: chess_knight
+    faction: cherrystone
+    name: unit_name_chess_knight
+    mapAnimation: units/knight/cherrystone/map_knight_cherrystone
+    battleAnimation: units/knight/cherrystone/battle_knight_cherrystone
+    battleAnimationRiver: fx/river_overlay/battle_knight_cherrystone_river
+    smallPortrait: units/knight/cherrystone/portrait_knight_cherrystone_small.png
+    mediumPortrait: units/knight/cherrystone/portrait_knight_cherrystone_medium.png
+    mapSpeed: 6.0
+    grabPos: [14, 9]
+    attackOffset: [5, 0]
+    sounds:
+      attackMap: unitAttack
+      attack: knightAttackRed
+      attackShout: knightPreAttack
+      death: soldierDieRed
+      deathMap: unitDie
+      run: horseEntry
+      runMap: horseMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.1
+
+  - class: chess_knight
+    faction: felheim
+    name: unit_name_chess_knight
+    mapAnimation: units/knight/felheim/map_knight_felheim
+    battleAnimation: units/knight/felheim/battle_knight_felheim
+    battleAnimationRiver: fx/river_overlay/battle_knight_felheim_river
+    smallPortrait: units/knight/felheim/portrait_knight_felheim_small.png
+    mediumPortrait: units/knight/felheim/portrait_knight_felheim_medium.png
+    mapSpeed: 6.0
+    grabPos: [14, 9]
+    attackOffset: [5, 0]
+    sounds:
+      attackMap: unitAttack
+      attack: knightAttackBlue
+      attackShout: knightPreAttack
+      death: undeadDieCrumble
+      deathMap: unitDie
+      run: horseEntry
+      runMap: horseMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 0.6
+    shouts:
+      soldier_blue_shout1: soldierShoutBlue1
+      knight_shout1: knightShout1
+      knight_shout2: knightShout2
+      knight_shout3: knightShout3
+      knight_shout4: knightShout4
+      knight_shout5: knightShout5
+      knight_shout6: knightShout6
+    hidden:
+      shouts:
+        - knight_shout2
+        - knight_shout5
+
+  - class: chess_knight
+    faction: heavensong
+    name: unit_name_chess_knight
+    mapAnimation: units/knight/heavensong/map_knight_heavensong
+    battleAnimation: units/knight/heavensong/battle_knight_heavensong
+    battleAnimationRiver: fx/river_overlay/battle_knight_heavensong_river
+    smallPortrait: units/knight/heavensong/portrait_knight_heavensong_small.png
+    mediumPortrait: units/knight/heavensong/portrait_knight_heavensong_medium.png
+    mapSpeed: 6.0
+    grabPos: [14, 9]
+    attackOffset: [5, 0]
+    sounds:
+      attackMap: unitAttack
+      attack: knightAttackRed
+      attackShout: knightPreAttack
+      death: soldierDieYellow
+      deathMap: unitDie
+      run: horseEntry
+      runMap: horseMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.1
+
+  - class: chess_knight
+    faction: floran
+    name: unit_name_chess_knight
+    mapAnimation: units/knight/floran/map_knight_floran
+    battleAnimation: units/knight/floran/battle_knight_floran
+    battleAnimationRiver: fx/river_overlay/battle_knight_floran_river
+    smallPortrait: units/knight/floran/portrait_knight_floran_small.png
+    mediumPortrait: units/knight/floran/portrait_knight_floran_medium.png
+    mapSpeed: 6.0
+    grabPos: [14, 9]
+    attackOffset: [5, 0]
+    sounds:
+      attackMap: unitAttack
+      attack: knightAttackGreen
+      attackShout: knightPreAttackGreen
+      death: soldierDieGreen
+      deathMap: unitDie
+      run: horseEntry
+      runMap: horseMapEntry
+      hit: hitOrganic
+      hitMap: hitOrganic
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.1
+
+...

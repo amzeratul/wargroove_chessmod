@@ -1,0 +1,167 @@
+---
+
+unitClasses:
+  - id: chess_king
+    name: unit_name_chess_king
+    cost: 100
+    movement: walking
+    moveRange: 0
+    verbs:
+    - chess_move
+    battleUnitCount: 1
+    canWait: false
+    canBeReinforced: false
+    classIcon: unit_icons_commander
+
+units:
+  - class: chess_king
+    faction: cherrystone
+    name: unit_name_chess_king
+    mapAnimation: units/commanders/mercival/map_mercival
+    battleAnimation: units/commanders/mercival/battle_mercival
+    battleAnimationRiver: fx/river_overlay/battle_mercival_river
+    smallPortrait: units/commanders/mercival/portrait_mercival_small.png
+    mediumPortrait: units/commanders/mercival/portrait_mercival_medium.png
+    mapSpeed: 4.0
+    skinColour: typeII
+    grabPos: [36, 20]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    stayAfterDeath: true
+    sounds:
+      attackMap: unitAttack
+      preAttack: mercival/mercivalPreAttack
+      attack: mercival/mercivalAttack
+      attackShout: mercival/mercivalAttackShout
+      captureShout: mercival/mercivalCapture
+      attackCommanderShout: mercival/mercivalCommanderKillShout
+      death: mercival/mercivalDie
+      deathMap: mercival/mercivalDieGhost
+      deathMapNoBattle: mercival/mercivalDieNoBattle
+      run: infantryHeavyMapEntry
+      runMap: infantryHeavyMapEntry
+      firstHit: mercival/mercivalHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: mercival/mercivalGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.25
+
+  - class: chess_king
+    faction: felheim
+    name: unit_name_chess_king
+    mapAnimation: units/commanders/valder/map_valder
+    battleAnimation: units/commanders/valder/battle_valder
+    battleAnimationRiver: fx/river_overlay/battle_valder_river
+    smallPortrait: units/commanders/valder/portrait_valder_small.png
+    mediumPortrait: units/commanders/valder/portrait_valder_medium.png
+    mapSpeed: 4.0
+    skinColour: typeIV
+    grabPos: [20, 26]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    stayAfterDeath: true
+    sounds:
+      attackMap: unitAttack
+      attack: valder/valderAttack
+      attackEffect: valder/valderAttackEffect
+      captureShout: valder/valderCapture
+      attackCommander: valder/valderCommanderKillAttack
+      death: valder/valderDie
+      deathMap: valder/valderDieGhost
+      deathMapNoBattle: valder/valderDieNoBattle
+      run: infantryLightMapEntry
+      runMap: infantryLightMapEntry
+      firstHit: valder/valderHit
+      hit: hitOrganic
+      hitMap: hitOrganic
+      groove: valder/valderGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.85
+        effect: fx/bs_valder_attack
+        effectDelay: 1.8
+        ranged: true
+
+  - class: chess_king
+    faction: heavensong
+    name: unit_name_chess_king
+    mapAnimation: units/commanders/koji/map_koji
+    battleAnimation: units/commanders/koji/battle_koji
+    battleAnimationRiver: fx/river_overlay/battle_koji_river
+    smallPortrait: units/commanders/koji/portrait_koji_small.png
+    mediumPortrait: units/commanders/koji/portrait_koji_medium.png
+    mapSpeed: 4.0
+    skinColour: typeIII
+    grabPos: [29, 39]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    alternativeCapture:
+      endPosOffset: -160 #coming from the left
+    sounds:
+      attackMap: unitAttack
+      attack: koji/kojiAttack
+      attackShout: koji/kojiPreAttack
+      captureShout: koji/kojiCapture
+      attackCommanderShout: koji/kojiCommanderKillShout
+      capture: koji/kojiCaptureCrash
+      death: koji/kojiDie
+      deathMap: koji/kojiDieGhost
+      deathMapNoBattle: koji/kojiDieNoBattle
+      run: giantEntry
+      runMap: giantEntry
+      firstHit: koji/kojiHit
+      hit: hitWood
+      hitMap: hitWood
+      groove: koji/kojiGrooveIntro
+    attacks:
+      - id: primary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 2.65
+
+  - class: chess_king
+    faction: floran
+    name: unit_name_chess_king
+    mapAnimation: units/commanders/greenfinger/map_greenfinger
+    battleAnimation: units/commanders/greenfinger/battle_greenfinger
+    battleAnimationRiver: fx/river_overlay/battle_greenfinger_river
+    smallPortrait: units/commanders/greenfinger/portrait_greenfinger_small.png
+    mediumPortrait: units/commanders/greenfinger/portrait_greenfinger_medium.png
+    menuIdleSequence: capture_idle
+    mapSpeed: 4.0
+    grabPos: [25, 39]
+    deathMoveMin: 0
+    deathMoveMax: 0
+    stayAfterDeath: true
+    sounds:
+      attackMap: unitAttack
+      attack: greenfinger/greenfingerAttack
+      attackShout: greenfinger/greenfingerPreAttack
+      captureShout: greenfinger/greenfingerShoutThisPlaceWillDo
+      attackCommander: greenfinger/greenfingerCommanderKillAttack
+      attackCommanderShout: greenfinger/greenfingerCommanderKillShout
+      death: greenfinger/greenfingerDie
+      deathMap: greenfinger/greenfingerDieGhost
+      deathMapNoBattle: greenfinger/greenfingerDieNoBattle
+      preIdle: greenfinger/greenfingerGrowth
+      run: infantryLightMapEntry
+      angryRun: greenfinger/greenfingerStagEntry
+      runMap: infantryLightMapEntry
+      firstHit: greenfinger/greenfingerHit
+      hit: hitWood
+      hitMap: hitOrganic
+      groove: greenfinger/greenfingerGrooveIntro
+    attacks:
+      - id: primary
+        # attackAnimationSequence: counter
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.125
+        samePanel: true
+      - id: secondary
+        hitSpark: fx/bs_stab_attack
+        hitDelay: 1.125
+
+...
